@@ -1,5 +1,14 @@
-<form>
-  <input type='text' name='Enter what you want to encode'/>
-  <input type='text' name='Enter the shift factor'/>
-  <input type='submit' value='Encode' />
-</form>
+<html>
+    <head></head>
+    <body>
+        <form>
+            <p>Enter what you want to enconde</p>
+            <input type='text' name='user_input'/>
+            <p>Enter the shift factor</p>
+            <input type='text' name='shift_factor'/>
+            <br><input type='submit' value='Encode' />
+        </form>
+
+        <p> <%= encoded_input %></p>
+    </body>
+</html>
