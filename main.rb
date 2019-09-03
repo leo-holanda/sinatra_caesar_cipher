@@ -35,8 +35,12 @@ def caesar_cipher(input, shift_factor)
 end
 
 get '/' do
-  user_input = params['user_input']
-  shift_factor = params['shift_factor']
-  encoded_input = caesar_cipher(user_input, shift_factor)
-  erb :index, :locals => {:encoded_input => encoded_input}
+    user_input = params['user_input']
+    shift_factor = params['shift_factor']
+
+    if !user_input.nil? && !shift_factor.nil?
+        encoded_input = caesar_cipher(user_input, shift_factor)
+    end
+    
+    erb :index, :locals => {:encoded_input => encoded_input}
 end
