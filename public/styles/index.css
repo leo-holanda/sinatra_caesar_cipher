@@ -11,6 +11,10 @@ body {
     color: #011627;
 }
 
+#submit:hover {
+    cursor: pointer;
+}
+
 textarea:focus, input:focus {
     outline: none;
 }
@@ -21,7 +25,7 @@ input {
     text-align: center;
     background: transparent;
     border: 0px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid aliceblue;
 }
 
 .grid {
@@ -30,12 +34,8 @@ input {
     width: 100vw;
     align-content: center;
     justify-items: center;
-    justify-self: center; 
 }
 
 .input {
     display: grid;
-    align-content: center;
-    justify-items: center;
-    justify-self: center; 
 }
