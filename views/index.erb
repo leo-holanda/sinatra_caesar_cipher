@@ -1,14 +1,24 @@
 <html>
-    <head></head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mastermind</title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet">
+        <link type="text/css" href="/styles/normalize.css" rel="stylesheet">
+        <link type="text/css" href="/styles/index.css" rel="stylesheet">
+    </head>
     <body>
-        <form>
-            <p>Enter what you want to enconde</p>
-            <input type='text' name='user_input'/>
-            <p>Enter the shift factor</p>
-            <input type='text' name='shift_factor'/>
-            <br><input type='submit' value='Encode' />
-        </form>
-
-        <p> <%= encoded_input %></p>
+        <div class="grid">
+            <form>
+                <div class="input">
+                    <p>Enter what you want to enconde</p>
+                    <input type='text' name='user_input'/>
+                    <p>Enter the shift factor</p>
+                    <input type="number" name='shift_factor' min="1" max="10">
+                    <br>
+                    <input id="submit" type='submit' value='Encode' />
+                </div>
+            </form>
+            <h1> <%= encoded_input %> </h1>
+        </div>
     </body>
 </html>

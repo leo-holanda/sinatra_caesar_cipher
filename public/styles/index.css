@@ -1,0 +1,41 @@
+body {
+    background-color: #011627;
+    font-family: 'Raleway', sans-serif;
+    color: aliceblue;
+    font-size: 25px;
+}
+
+#submit {
+    background: orange;
+    border: none;
+    color: #011627;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+input {
+    color: aliceblue;
+    padding: 15px;
+    text-align: center;
+    background: transparent;
+    border: 0px;
+    border-bottom: 1px solid white;
+}
+
+.grid {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    align-content: center;
+    justify-items: center;
+    justify-self: center; 
+}
+
+.input {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    justify-self: center; 
+}
